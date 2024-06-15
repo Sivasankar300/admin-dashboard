@@ -65,6 +65,18 @@
     background-color:#1992D4;
     grid-row:1/5;
     grid-column: 1;
+    display:grid;
+    grid-template-rows: 1fr 6fr 10fr;
+
+    padding:20px;
+
+    color:white;
+    font-weight: bolder;
+  
+  }
+
+  .top,.middle,.bottom{
+    margin:5px
   }
 
   .header{
