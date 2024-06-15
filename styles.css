@@ -1,37 +1,73 @@
-/*
-  Josh's Custom CSS Reset
-  https://www.joshwcomeau.com/css/custom-css-reset/
-*/
-*, *::before, *::after {
-    box-sizing: border-box;
-  }
-  * {
-    margin: 0;
-  }
-  body {
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-  }
-  img, picture, video, canvas, svg {
-    display: block;
-    max-width: 100%;
-  }
-  input, button, textarea, select {
-    font: inherit;
-  }
-  p, h1, h2, h3, h4, h5, h6 {
-    overflow-wrap: break-word;
-  }
+    /*
+    Josh's Custom CSS Reset
+    https://www.joshwcomeau.com/css/custom-css-reset/
+    */
+    *, *::before, *::after {
+        box-sizing: border-box;
+    }
+    * {
+        margin: 0;
+    }
+    body {
+        line-height: 1.5;
+        -webkit-font-smoothing: antialiased;
+    }
+    img, picture, video, canvas, svg {
+        display: block;
+        max-width: 100%;
+    }
+    input, button, textarea, select {
+        font: inherit;
+    }
+    p, h1, h2, h3, h4, h5, h6 {
+        overflow-wrap: break-word;
+    }
 
-  /* My own CSS reset */
+    /* My own CSS reset */
 
-  ul{
-  list-style-type: none; /* Remove bullets */
-  padding: 0; /* Remove padding */
-  }
+    ul{
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    }
 
-  textarea:focus, input:focus{
-    outline: none; /* Removes the outline on form Inputs */
-}
+    textarea:focus, input:focus{
+        outline: none; /* Removes the outline on form Inputs */
+    }
+
+    html,body{
+        height: 100%;
+    }
+
+    .container{ /* Name of the container class */
+        height: inherit;
+    }
 
   /* CSS reset over */
+
+  .container{
+    
+    display: grid;
+    grid-template-columns: 1fr 5fr; /* Todo: Give it a minmax value */
+    grid-template-rows: 1fr 2fr 2fr 2fr;
+  }
+
+  .header img{
+    width: 25px;
+    height: 25px;
+  }
+
+  .sidebar{
+    background-color:#1992D4;
+    grid-row:1/5;
+    grid-column: 1;
+  }
+
+  .header{
+    background-color: white;
+    grid-column: 2/3;
+  }
+
+  .content{
+    background-color: #E2E8F0;
+    grid-row:2/5;
+  }
