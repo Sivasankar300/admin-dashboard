@@ -43,7 +43,7 @@
   .container{
     display: grid;
     grid-template-columns: 1fr 5fr; /* Todo: Give it a minmax value */
-    grid-template-rows: 10vh repeat(3,30vh);
+    grid-template-rows: 20vh repeat(3,1fr);
   }
 
 
@@ -74,6 +74,9 @@
     background-color: white;
     grid-column: 2/3;
     padding: 0px 20px 0px 20px;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr;
   }
 
   .topHeader{
@@ -81,7 +84,7 @@
     grid-template-columns: 1fr 16fr 4fr 2fr 3fr;
     justify-items: center;
 
-    padding: 20px;
+    padding: 20px 20px 0px 20px;
     gap:5px
   }
 
