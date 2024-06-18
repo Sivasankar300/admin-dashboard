@@ -38,25 +38,16 @@
         height: 100%;
     }
 
-    .container{ /* Name of the container class */
-        height: inherit;
-    }
-
   /* CSS reset over */
 
   .container{
-    
     display: grid;
     grid-template-columns: 1fr 5fr; /* Todo: Give it a minmax value */
-    grid-template-rows: 1fr 2fr 2fr 2fr;
+    grid-template-rows: 10vh repeat(3,30vh);
   }
 
-  .header img{
-    width: 25px;
-    height: 25px;
-  }
 
-  .smallPfp{
+  img{
     width: 40px;
     height: 40px;
   }
@@ -124,11 +115,6 @@
     align-items:center ;
   }
 
-  .content{
-    background-color: #E2E8F0;
-    grid-row:2/5;
-  }
-  
   .button{
     color: white;
     background-color: #1992D4;
@@ -136,5 +122,126 @@
     padding:10px;
     text-align:center;
   }
+
+  .content{
+    background-color: #E2E8F0;
+    grid-column: 2/3;
+    grid-row: 2/5;
+    display: grid;
+    grid-template-columns:3fr 1fr;
+    grid-template-rows:1fr;
+
+    padding-bottom:40px
+  }
+
+  .leftContent{
+    grid-column: 2/3;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 25px repeat(auto-fit, minmax(150px,1fr));
+    gap:15px;
+    margin-left:20px
+    
+  }
+
+  .headingText{
+   grid-column: 1/3;
+   font-weight: bolder;
+   background-color: #E2E8F0;
+  }
+
+  .card{
+    background-color: white;
+    width: 400px;
+    padding:20px;
+    border-radius: 15px;
+    border-left:5px solid lightpink;
+
+    min-width: 100px;
+    min-height: 140px
+  }
+
+  .card>div{
+    color:grey;
+  }
+
+  /* Right Content below */
+
+  .rightContent{
+    grid-column: 3;
+    grid-row: 1/5;
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+    padding: 20px 20px 0px 20px;
+  }
+
+  .announcements{
+    grid-row: 1;
+    background-color: white;
+
+    display: grid;
+    grid-template-rows:25px repeat(3,1fr) ;
+
+  }
+  
+  .announcements>.headingText{
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+
+  .trending{
+   grid-row:2;
+   background-color: white;
+   display: grid;
+   grid-template-rows: 25px repeat(3,1fr);
+
+  }
+
+  .trending>.headingText{
+   
+    align-items: center;
+    grid-column: 1;
+
+
+  }
+  .users{
+   
+  }
+
+  .news,.users{
+
+    min-width:250px;
+    margin: 20px;
+    border-radius: 10px;
+
+    color: grey;
+    font-size: 14px ;
+  }
+  .news>div,.users>span{
+    font-weight: bolder;
+    color: black;
+  }
+  .users>img{
+    display: inline-block;
+  }
+
+  span{
+    color:black;
+    font-weight: bolder;
+  }
+
+  .user{
+    display:grid;
+    grid-template-columns: 50px 1fr;
+    justify-content: flex-start;
+  }
+
+  span>div{
+    color: grey;
+    font-weight: normal;
+  }
+  
+ 
 
   
