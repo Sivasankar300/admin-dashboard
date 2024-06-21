@@ -1,5 +1,5 @@
-### An Admin Dashboard project part of The Odin Project's curriculum
-
+### An Admin Dashboard project part of The Odin Project's curriculum (WIP)
+ 
 This project is for practicing the Grid concepts that I learnt thus far with an actual project
 with no handholding for reinforced learning.
 
